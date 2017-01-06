@@ -1,0 +1,89 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.wrapper{
+    width: 600px;
+    margin: 50px auto;
+    position: relative;
+}
+input.SRadioFolder{
+    display: none;
+}
+input.SRadioFolder + label{
+    float: left;
+    background-color: mediumspringgreen;
+    display: block;
+    margin-right: 5px;
+    padding: 0 10px 0 10px;
+    border-radius: 10px 10px 0 0;
+    line-height: 2em;
+    width: 245px;
+    text-align: center;
+}
+input.SRadioFolder:first-child + label{
+    margin-left: 10px;
+}
+input.SRadioFolder:checked + label{
+    background-color: lightgrey;
+}
+input.SRadioFolder + label + div.main{
+    display: none;
+}
+input.SRadioFolder:checked + label + div.main{
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 2em;
+    min-width: 20em;
+    background-color: lightgrey;
+    border-radius: 10px;
+    padding: 10px;
+}
+.main{
+    background-color: lightgrey;
+    height: 200px;
+}
+.main .show, .main .hide{
+    position: relative;
+    width: 150px;
+    display: inline-block;
+}
+.main .show .text,.main .hide .text{
+    width: 60px;
+    margin: 5px 0 3px 3px;
+}
+.main .show p,.main .hide p{
+    margin-left: 5px;
+    color: darkslategrey;
+}
+.main .show div,.main .hide div{
+    width: 150px;
+    padding-left: 57px;
+    height: 30px;
+}
+.main .show div button,.main .hide div button{
+    width: 62px;
+    height: 25px;
+    border-radius: 7px;
+    background: linear-gradient(to top, #6dffc6, lightgrey);
+
+}
+.main .vivod{
+    width: 320px;
+    height: 160px;
+    display: inline-block;
+    background-color: white;
+    margin-top: 20px;
+}
+.main .img{
+    width: 62px;
+    display: inline-block;
+}
+.main .img img{
+    width: 50px;
+    margin: 0 0 150px 8px;
+}
+.wrapper{
+
+}
